@@ -1,5 +1,7 @@
-%h1 Items#index
-%p Find me in app/views/items/index.html.erb
 -@item_images_top.each do |item| 
   =item.url
 
+.wrapper
+  = render "top-header"
+  = render "top-main"
+  = render "top-footer"
