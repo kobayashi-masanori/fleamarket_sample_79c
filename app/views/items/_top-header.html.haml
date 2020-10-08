@@ -5,5 +5,5 @@
         =link_to image_tag("logo.svg",width:"140",height:"40"), root_path 
       .header__inner__top__form
         = form_tag(items_path,method: :get) do
-          = text_field_tag :search, "",placeholder:"何かお探しですか？"
-          = submit_tag 'search', :name => nil
+          = text_field_tag :search, "",placeholder:"キーワードから探す"
+          = submit_tag '検索', :name => nil
