@@ -16,5 +16,30 @@
     padding: 0 60px;
     display: flex;
     align-items: center;
+    &__content{
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 35px 0 0 0;
+      &__title{
+        text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        font-size: 60px;
+        line-height: 1.2;
+        color: #fff;
+      }
+      &__message{
+        text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.77778;
+        margin: 16px 0 0 0;
+      }
+      &__appbtn{
+        display: flex;
+        &__Store{
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
