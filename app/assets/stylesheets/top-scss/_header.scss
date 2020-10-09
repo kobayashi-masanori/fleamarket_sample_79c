@@ -4,7 +4,6 @@
 
 .header{
   background-color:red;
-  box-shadow:0px 2px 4px rgba(0, 0, 0, 0.18);
   position: relative;
   &__inner{
     width: 1030px;
@@ -20,5 +19,46 @@
         position: relative;
       }
     }
+    &__bar{
+      display: flex;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+      color: #000;
+        &__search{
+        display: flex;
+        position: relative;
+          &__Category{
+            display: flex;
+            line-height: 38px;
+            padding: 0 0 0 16px;
+            margin:0;
+          }
+          &__Brand{
+            display: flex;
+            line-height: 38px;
+            padding: 0 0 0 16px;
+            margin: 0;
+          }
+        }
+        &__registration{
+          margin-left: auto;
+          display: flex;
+          &__Rogin{
+            display: flex;
+            line-height: 38px;
+            padding: 0 0 0 16px;
+            margin:0;
+          }
+          &__Touroku{
+            display: flex;
+            line-height: 38px;
+            padding: 0 0 0 16px;
+            margin:0;
+          }
+        }
+      }
     }
   }
