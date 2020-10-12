@@ -55,7 +55,88 @@
         .main__pic3__content__appbtn__Play
           =link_to image_tag("google-play.svg",width:"180"), root_path
   .main__pic4
-    .title FURIMAの特徴
-    .features
+    .main__pic4__title FURIMAの特徴
+    .main__pic4__features
+      %section.feature
+        %figure.image
+        =link_to image_tag("icon-01.png",width:"220px",height:"340px"),root_path
+        %h3.sub 簡単に売り買いできる
+        %p.setumei スマホ一つで、いつでもどこでも簡単に出品・購入が可能！
+      %section.feature
+        %figure.image
+        =link_to image_tag("icon-03.png",width:"220px",height:"340px"),root_path
+        %h3.sub 売上金は即日振り込みに対応
+        %p.setumei 午前9時までに振り込みを依頼いただければ、翌日に指定の口座に入金いたします！
+      %section.feature
+        %figure.image
+        =link_to image_tag("icon-04.png",width:"220px",height:"340px"),root_path
+        %h3.sub 様々な支払いに対応
+        %p.setumei お支払いは、クレジットだけでなく、ポイントや売上金など多彩な方法があります。
   .main__pic5
+    %h2.title ピックアップカテゴリー
+    .main__pic5__box
+      .main__pic5__box__inner
+        %a.text(href="#")
+          %h3.title 新規投稿商品
+      .main__pic5__box__lists
+        .main__pic5__box__lists__list
+          %a(href="")
+            %figure.image
+            =link_to image_tag("beef.jpg",width:"220px",height:"150px"),root_path
+          .main__pic5__box__lists__list__name
+            %h3.text テスト
+            %h4.data
+              %ul.ul
+                %li.li 10000円
+                %li
+                = icon('fas', 'star')
+              %p.zei (税込)
+        .main__pic5__box__lists__list
+          %a(href="")
+          %figure.image
+          =link_to image_tag("moyasi.jpg",width:"220px",height:"150px"),root_path
+          .main__pic5__box__lists__list__name
+            %h3.text ee
+            %h4.data
+              %ul.ul
+                %li.li 1000円
+                %li
+                = icon('fas', 'star')
+              %p.zei (税込) 
+        .main__pic5__box__lists__list
+          %a(href="")
+          %figure.image
+          =link_to image_tag("sishamo.png",width:"220px",height:"150px"),root_path
+          .main__pic5__box__lists__list__name
+            %h3.text product3
+            %h4.data
+              %ul.ul
+                %li.li 30000円
+                %li
+                = icon('fas', 'star')
+              %p.zei (税込)       
+        .main__pic5__box__lists__list
+          %a(href="")
+          %figure.image
+          =link_to image_tag("hanpen.png",width:"220px",height:"150px"),root_path
+          .main__pic5__box__lists__list__name
+            %h3.text product2
+            %h4.data
+              %ul.ul
+                %li.li 20000円
+                %li
+                = icon('fas', 'star')
+              %p.zei (税込) 
+        .main__pic5__box__lists__list
+          %a(href="")
+          %figure.image
+          =link_to image_tag("kare-.png",width:"220px",height:"150px"),root_path
+          .main__pic5__box__lists__list__name
+            %h3.text product1
+            %h4.data
+              %ul.ul
+                %li.li 10000円
+                %li
+                = icon('fas', 'star')
+              %p.zei (税込)             
   .main__pic6
