@@ -136,5 +136,19 @@
       }
     }
   }
-  __pic4
-}
+  &__pic4{
+    padding: 60px 100px;
+    background-color: #fff;
+    &__title{
+      font-size: 27px;
+      text-align: center;
+      margin: 0 0 40px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      position: relative;
+    }
+    &__features{
+      
+    }
+  }
