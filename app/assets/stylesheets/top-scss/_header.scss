@@ -13,8 +13,9 @@
       -webkit-box-pack: justify;
       justify-content: space-between; 
       &__form{
-        width: 100%;
-        position: relative;
+        width: calc(100% - 26px);
+        height: 36px;
+        padding: 0 0 0 5px;
       }
     }
     &__bar{
