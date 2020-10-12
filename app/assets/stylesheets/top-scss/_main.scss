@@ -3,7 +3,6 @@
 }
 
 .main{
-  background-color: pink;
   box-sizing: border-box;
   &__pic1{
     width: 100%;
@@ -44,7 +43,6 @@
   }
   &__pic2{
     padding: 60px 20px;
-    background-color: yellow;
     .content{
       text-align: center;
       font-size: 26px;

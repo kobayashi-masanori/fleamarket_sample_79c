@@ -3,13 +3,11 @@
 }
 
 .header{
-  background-color:red;
   position: relative;
   &__inner{
     width: 1030px;
     margin: 0px auto;
     padding: 8px 0px 0px;
-    background-color: blueviolet;
     &__top{
       display: flex;
       -webkit-box-pack: justify;
