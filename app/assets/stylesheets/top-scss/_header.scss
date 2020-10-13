@@ -9,13 +9,33 @@
     margin: 0px auto;
     padding: 8px 0px 0px;
     &__top{
-      display: flex;
       -webkit-box-pack: justify;
       justify-content: space-between; 
+      display: flex;
       &__form{
-        width: calc(100% - 26px);
-        height: 36px;
-        padding: 0 0 0 5px;
+        margin-left: auto;
+        width: 100%;
+        .kensaku{
+          width: 100%;
+          display: flex;
+          margin-bottom: 5px;
+          .form{
+            width: calc(100% - 26px);
+            height: 36px;
+            padding: 0 0 0 5px;
+          }
+          .musimegane{
+            width: 36px;
+            border: 0;
+            cursor: pointer;
+            background-color: #3CCACE;
+            padding: 8px;
+            .icon{
+              width: 100%;
+              vertical-align: bottom;
+            }
+          }
+        }
       }
     }
     &__bar{

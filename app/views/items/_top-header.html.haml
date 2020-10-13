@@ -4,9 +4,11 @@
       .header__inner__top__logo
         =link_to image_tag("logo.svg",width:"140",height:"40"), root_path 
       .header__inner__top__form
-        = form_tag(items_path,method: :get) do
-          = text_field_tag :search, "",placeholder:"キーワードから探す"
-          = submit_tag '検索', :name => nil
+        = form_tag(searches_path,method: :get,class: :kensaku) do
+          = text_field_tag :search, "",placeholder:"キーワードで探す",class:"form"
+          = button_tag type: "submit",class:"musimegane" do
+            = image_tag "icon-search 1.png",class:"icon"
+          -# = submit_tag '検索', :name => nil
     .header__inner__bar
       .header__inner__bar__search
         .header__inner__bar__search__Category
