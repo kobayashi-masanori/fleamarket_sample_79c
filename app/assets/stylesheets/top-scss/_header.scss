@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  position: relative;
+  &__inner{
+    width: 1030px;
+    margin: 0px auto;
+    padding: 15px 0px 0px;
+    &__top{
+      position: relative;
+      display: flex;
+      align-items: center;
+      display: flex;
+      &__logo{
+        //padding-bottom: 10px;
+        margin-right: 30px;
+        border-radius: 4px;
+      }
+      &__form{
+        margin-left: auto;
+        width: 100%;
+        .kensaku{
+          width: 100%;
+          display: flex;
+          margin-bottom: 5px;
+          .form{
+            width: calc(100% - 26px);
+            height: 36px;
+            padding: 0 0 0 5px;
+          }
+          .musimegane{
+            width: 36px;
+            border: 0;
+            cursor: pointer;
+            background-color: #3CCACE;
+            padding: 8px;
+            .icon{
+              width: 100%;
+              vertical-align: bottom;
+            }
+          }
+        }
+      }
+    }
+    &__bar{
+      display: flex;
+      position: relative;
+      font-size: 20px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+      color: #000;
+        &__search{
+        display: flex;
+        position: relative;
+        font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+          &__Category{
+            color: #333;
+            text-decoration: none;
+            line-height: 32px;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            padding-right: 30px;
+          }
+          &__Brand{
+            color: #333;
+            text-decoration: none;
+            line-height: 32px;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            padding-right: 30px;
+          }
+        }
+        &__registration{
+          margin-left: auto;
+          display: flex;
+          &__Rogin{
+            color: #333;
+            text-decoration: none;
+            line-height: 32px;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            padding-right: 30px;
+          }
+          &__Touroku{
+            color: #333;
+            text-decoration: none;
+            line-height: 32px;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
