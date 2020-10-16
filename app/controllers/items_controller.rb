@@ -1,7 +1,5 @@
 class ItemsController < ApplicationController
   def index
-
-    @items = Item.includes(:item_images).order('created_at DESC')
     @items = Item.all.where.not(trading_status:2)
     @item_images_top = ItemImage.all.includes(:item).group(:item_id)
   end
