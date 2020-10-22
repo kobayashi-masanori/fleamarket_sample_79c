@@ -49,5 +49,3 @@ class ItemsController < ApplicationController
     @item_images_top = ItemImage.all.includes(:item).group(:item_id)
   end
   
-
-end
