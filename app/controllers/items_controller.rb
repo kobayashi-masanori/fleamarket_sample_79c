@@ -32,6 +32,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    @item = Item.find(params[:id])
     @item.destroy
     redirect_to root_path
   end
@@ -50,4 +51,3 @@ class ItemsController < ApplicationController
     @items = Item.all.where.not(trading_status:2)
     @item_images_top = ItemImage.all.includes(:item).group(:item_id)
   end
-  
