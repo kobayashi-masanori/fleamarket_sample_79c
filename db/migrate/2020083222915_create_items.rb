@@ -18,8 +18,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
       # t.references :auction, foreign_key: {to_table: :users}
       # t.datetime :deal_closed_date, foreign_key:
       t.string :brand #出品情報送信のため、暫定的に追加
-      t.string :category_id #出品情報送信のため、暫定的に追加
-      t.integer :buyer_id
+      t.references :category, foreign_key: true #出品情報送信のため、暫定的に追加
+      #t.integer :buyer_id
 
     end
   end
