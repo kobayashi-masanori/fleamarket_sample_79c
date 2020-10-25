@@ -4,6 +4,12 @@
 = link_to '出品', new_item_path
 
 = link_to '削除', item_path(@items), method: :delete
+.wrapper
+  -# = render "top-header"
+  = render "top-main"
+  -# = render "top-footer"
+  -# = render "top-camera"
+
 
 -#-@item_images.each do |item|
   -#=item.url

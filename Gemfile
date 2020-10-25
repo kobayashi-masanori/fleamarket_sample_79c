@@ -72,11 +72,7 @@ group :production do
   gem 'unicorn'
 end
 
-#ユーザー認証を扱うときに非常に便利なgem
-gem 'devise-i18n'
-gem 'devise-i18n-views'
-gem 'erb2haml'
-gem 'jquery-rails'
 
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
+gem 'font-awesome-sass'
