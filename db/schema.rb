@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2020_10_21_105927) do
     t.integer "prefecture_code", null: false
     t.integer "size", null: false
     t.integer "preparation_day_id", null: false
+    t.integer "delivery_type", null: false
     t.bigint "seller_id"
     t.bigint "buyer_id"
     t.string "brand"
