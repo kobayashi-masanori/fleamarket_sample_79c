@@ -27,12 +27,10 @@ ActiveRecord::Schema.define(version: 2020_10_31_071921) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
-    t.bigint "item_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "ancestry"
     t.index ["ancestry"], name: "index_categories_on_ancestry"
-    t.index ["item_id"], name: "index_categories_on_item_id"
   end
 
   create_table "item_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -53,12 +51,13 @@ ActiveRecord::Schema.define(version: 2020_10_31_071921) do
     t.integer "preparation_day_id", null: false
     t.integer "delivery_type_id", null: false
     t.bigint "seller_id"
-    t.bigint "buyer_id"
+    t.string "brand"
     t.datetime "deal_closed_date"
+    t.integer "category_id"
+    t.integer "auction"
     t.string "ancestry"
     t.integer "category_id"
     t.index ["ancestry"], name: "index_items_on_ancestry"
-    t.index ["buyer_id"], name: "index_items_on_buyer_id"
     t.index ["seller_id"], name: "index_items_on_seller_id"
   end
 
@@ -82,8 +81,6 @@ ActiveRecord::Schema.define(version: 2020_10_31_071921) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "categories", "items"
   add_foreign_key "item_images", "items"
-  add_foreign_key "items", "users", column: "buyer_id"
   add_foreign_key "items", "users", column: "seller_id"
 end
