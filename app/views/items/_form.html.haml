@@ -128,9 +128,9 @@
             %ul
               - @item.errors.full_messages_for(:preparation_day_id).each do |message|
                 %li= message
-          -# .Item__delivery__delivery_type 配送方法
-          -# %div 
-          -#   = f.text_field :delivery_type_id, class: 'Form__delivery', placeholder: ''
+          .Item__delivery__delivery_type 配送方法
+          %div 
+            = f.text_field :delivery_type_id, class: 'Form__delivery', placeholder: ''
             -# = f.hidden_field :seller_id, :value => current_user.id
         .Item__box__field__price
           .Item__box__field__price__outer

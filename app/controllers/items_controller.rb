@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
   end
 
   def create
+    #binding.pry
     @item = Item.new(item_params)
     if @item.save
       redirect_to root_path
@@ -57,6 +58,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    @item = Item.find(params[:id])
     @item.destroy
     redirect_to root_path
   end

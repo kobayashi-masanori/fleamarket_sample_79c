@@ -33,7 +33,7 @@ class Item < ApplicationRecord
 
   validates :introduction, presence: true, length: { maximum: 1000 }
   
-  validates :category_id, presence: true
+  validates :category, presence: true
   
   validates :price, presence: true, length: { maximum: 9999999 }
   
@@ -47,10 +47,10 @@ class Item < ApplicationRecord
   
   validates :preparation_day_id, presence: true
   
-  validates :delivery_type_id, presence: true
+  # validates :delivery_type_id, presence: true
 
 
-  validates_length_of :item_images, minimum: 1
+  # validates_length_of :item_images, minimum: 1
 
   belongs_to :seller, class_name: "User", foreign_key: "seller_id", optional: true
   # belongs_to :seller, class_name: "user" = （Itemに紐づく） Userモデルをsellerと定義する。　
