@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
   before_action :set_category, only: [:show]
   before_action :set_current_user_products,only:[:i_transaction,:i_exhibiting,:i_soldout]
   before_action :set_user,only:[:i_transaction,:i_exhibiting,:i_soldout]
+  before_action :set_item,only:[:show]
 
   def index
     @items = Item.all
@@ -18,8 +19,11 @@ class ItemsController < ApplicationController
     @nickname = Item.find(params[:id]).seller.nickname
 
     @category_id = @items_show.pluck(:category_id)[0]
-    @category_parent = Category.find(@category_id).parent.parent
-    @category_child = Category.find(@category_id).parent
+    #binding.pry
+    #@category_parent = Category.find(@category_id).parent.parent 商品詳細ページ表示のため一時的にコメントアウト。24行目にrootと記載
+    @category_parent = Category.find(@category_id).root
+    #@category_child = Category.find(@category_id).parent 商品詳細ページ表示のため一時的にコメントアウト、26行目に記載
+    @category_child = @category_parent.children
     @category_grandchild = Category.find(@category_id)
   end
 
@@ -30,7 +34,6 @@ class ItemsController < ApplicationController
   end
 
   def create
-    #binding.pry
     @item = Item.new(item_params)
     if @item.save
       redirect_to root_path

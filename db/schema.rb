@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_10_31_071921) do
     t.integer "item_condition_id", null: false
     t.integer "shipping_charge_players_id"
     t.integer "prefecture_code", null: false
+    t.integer "size_id", null: false
     t.integer "preparation_day_id", null: false
     t.integer "delivery_type_id", null: false
     t.bigint "seller_id"

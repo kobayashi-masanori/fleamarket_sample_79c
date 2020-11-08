@@ -68,12 +68,12 @@
             %ul
               - @item.errors.full_messages_for(:category_id).each do |message|
                 %li= message
-          -# .Item__detail__size サイズ  
-          -# %div 
-          -#   = f.text_field :size_id, class: 'Form__size', placeholder: ''
-          -#   %ul
-          -#     - @item.errors.full_messages_for(:size_id).each do |message|
-          -#       %li= message
+          .Item__detail__size サイズ                                            
+          %div 
+            = f.text_field :size_id, class: 'Form__size', placeholder: ''
+            %ul
+              - @item.errors.full_messages_for(:size_id).each do |message|
+                %li= message
           -# .Item__detail__brand ブランド
           -# %div 
           -#   = f.text_field :brand, class: 'Form__brand', placeholder: ''

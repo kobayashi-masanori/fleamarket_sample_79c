@@ -43,7 +43,7 @@ class Item < ApplicationRecord
   
   validates :item_condition_id, presence: true
   
-  # validates :size_id, presence: true
+  validates :size_id, presence: true
   
   validates :preparation_day_id, presence: true
   
